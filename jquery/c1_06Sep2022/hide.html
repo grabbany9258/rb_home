@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script
+        src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+        crossorigin="anonymous">
+</script>
+<script>
+	$(document).ready(function(){
+		$("#grb").click(function(){
+			$("p,h1,h3").toggle(1000);
+		});
+		$("#grbd").click(function(){
+			$("p,h1,h3").toggle(1000);
+		});
+	});
+</script>
+
+<body>
+	<p>Welcome to my new jQuery page</p>
+	<h1>This is my second day attepmpt for learning jQuery</h1>
+	<h3>THis is h3 tag</h3>
+
+	<button id="grb">Click here</button>
+	<!-- <button id="grbd">show</button> -->
+	
+</body>
+</html>
