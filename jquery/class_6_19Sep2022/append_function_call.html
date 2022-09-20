@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="../jquery.min.js"></script>
+	<script>
+		function appentText(){
+			var text1 = "<p>item1 after</p>";
+			var text2 = "<p>item2 after</p>";
+			var text3 = $("<p></p>").text("Rabbany jquery");
+			var text4 = "<p>item4 after</p>";
+			var text5 = document.createElement("p");
+			text5.innerHTML ="text5";
+
+			$("body").append(text1, text2 ,text3, text4, text5);
+			
+		}
+	</script>
+</head>
+<body>
+	<button onclick="appentText()";>Append text</button>
+	
+</body>
+</html>

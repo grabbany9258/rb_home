@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".btn1").click(function(){
+				$(".box1").after("<div class='remove1'>This is header box</div>")
+				
+				$(".remove1").click(function(){
+					$(this).remove();
+					});
+				})
+
+			// button 2 before add
+
+				$(".btn2").click(function(){
+				$(".box1").before("<div class='remove2'>This is header box</div>")
+				
+
+				$(".remove2").click(function(){
+					$(this).remove(); 
+				})
+
+			})
+
+			
+		
+		});
+	</script>
+	<style>
+		.box1{
+			border: 3px solid black; width: 100px; color: red;  margin: 5px; background-color: skyblue; padding: 15px;
+		}
+		
+		
+		.remove1{
+			border: 3px solid red; width: 100px; color: black; margin: 5px;	
+		}
+
+
+		.remove2{
+			border: 3px solid red; width: 100px; color: black; margin: 5px;	
+		}
+	</style>
+</head>
+<body>
+	<button class="btn1">Click to Add</button>
+	<button class="btn2">Click to before</button>
+	<div class="box1">This is fixed box</div>
+	
+</body>
+</html>

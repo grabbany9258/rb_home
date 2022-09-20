@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".btn1").click(function(){
+				$(".city").append("<li>Item after</li>");
+			});
+			$(".btn2").click(function(){
+				$(".city").prepend("<li>Item before</li>");
+			})
+		});
+	</script>
+</head>
+<body>
+	
+	<button class="btn2">Click to add before</button>
+	<button class="btn1">Click to add after</button>
+
+	<ul class="city">
+		<li style="color: red;">item Add</li>
+	</ul>
+
+</body>
+	
+</html>

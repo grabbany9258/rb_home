@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="../jquery.min.js"></script>
+	<script>
+		function prependText(){
+			var text1 = "<p>text1</p>";
+			var text2 = $("<p></p>").text("text2");
+			var text3 = document.createElement("p");
+			text3.innerHTML ="text3";
+			$("body").prepend(text1, text2, text3);
+		}
+		
+	</script>
+</head>
+<body>
+	<button onclick="prependText()";>Prepend Text</button>
+</body>
+</html>
